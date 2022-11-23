@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogoa da velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="botao-recomecar"onclick="atualizarPagina()">
+        <h2>Recomeçar</h2>
+    </div>
+    <div class="tabuleiro">
+        <div class="marcador">
+            <h2>Jogador <span>1</span></h2>
+            <br>
+            <h2 class="erro"></h2>
+        </div>
+        <div class="fundo">
+            <div class="linha">
+                <div class="quadrado linha1 coluna1 diagonal1" onclick="clicou(0)">
+                    <div class="img"></div>
+                </div>
+                <div class="quadrado linha1 coluna2" onclick="clicou(1)">
+                    <div class="img"></div>
+                </div>
+                <div class="quadrado linha1 coluna3 diagonal2" onclick="clicou(2)">
+                    <div class="img"></div>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="quadrado linha2 coluna1" onclick="clicou(3)">
+                    <div class="img"></div>
+                </div>
+                <div class="quadrado linha2 coluna2 diagonal1 diagonal2" onclick="clicou(4)">
+                    <div class="img"></div>
+                </div>
+                <div class="quadrado linha2 coluna3" onclick="clicou(5)">
+                    <div class="img"></div>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="quadrado linha3 coluna1 diagonal2" onclick="clicou(6)">
+                    <div class="img"></div>
+                </div>
+                <div class="quadrado linha3 coluna2" onclick="clicou(7)">
+                    <div class="img"></div>
+                </div>
+                <div class="quadrado linha3 coluna3 diagonal1" onclick="clicou(8)">
+                    <div class="img"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
